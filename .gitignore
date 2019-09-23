@@ -6,3 +6,4 @@ dist/
 public/
 lib/
 .swp
+server.js.map/
