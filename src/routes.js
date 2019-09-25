@@ -14,7 +14,7 @@ const Public = () => <h3>Public</h3>
 const Login = () => <h3>Login In</h3>
 
 
-var auth=true
+var auth=false
 const Protected = (props) => (
   !auth
     ? <Redirect to='/login' />
@@ -48,7 +48,7 @@ const routes = [
       path: "/",
       exact: true,
       requestInitialData: requestInitialData,
-      component: Home
+      component: Protected
     }
   ];
   

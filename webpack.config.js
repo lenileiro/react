@@ -68,7 +68,12 @@ const browserConfig = {
       }),
       new OptimizeCSSAssetsPlugin({})
     ]
-  }
+  },
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+}
 };
 
 
@@ -137,7 +142,12 @@ var serverConfig = {
         }),
         new OptimizeCSSAssetsPlugin({})
       ]
-    }
+    },
+    performance: {
+      hints: false,
+      maxEntrypointSize: 512000,
+      maxAssetSize: 512000
+  }
   };
 
   module.exports = [browserConfig, serverConfig];
