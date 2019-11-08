@@ -14,7 +14,7 @@ const Public = () => <h3>Public</h3>
 const Login = () => <h3>Login In</h3>
 
 
-var auth=false
+var auth=true
 const Protected = (props) => (
   !auth
     ? <Redirect to='/login' />

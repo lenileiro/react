@@ -1,10 +1,5 @@
 module.exports = {
-  corePlugins: {
-    preflight: false
-  },
-  theme: {
-    extend: {}
-  },
+  theme: {},
   variants: {},
   plugins: []
 }
